@@ -12,13 +12,16 @@ Isso é um bloco de comentário.
 >UX (Como designer de experiência do usuário): Criar telas simples e práticas para a funcionalidade dos clientes.
 
 >IA (Como analista de dados):  Analisar os dados coletados, identificar padrões e fornecer insights para melhorar o sistema e a experiencia do usúario.
-
-
 '''
 
-# Isso é um comentário de linha. Finalmente quebramos a maldição 
+# Isso é um comentário de linha. Finalmente quebramos a maldição
 # print('Olá, mundo!')
 # print('\n---------------------\n')
+
+p1_home = " "
+p2_nome = " "
+p3_nome = " "
+
 while True:
 
     print('-' * 48 + '\n')
@@ -38,7 +41,7 @@ while True:
 
     if opcao == '1':
         print('Opção 1 - Cadastrando cliente...\n')
-    
+
         nome_cliente = input('Digite o nome do cliente:')
         nome_produto = input('Digite o nome do produto:')
         descricao_produto = input('Digite a descrição do produto:')
@@ -50,26 +53,23 @@ while True:
         historico_vendas = input('Digite histórico de vendas:')
         gerar_relatorio = input('Digite gerar relatório de venda:')
 
-
     elif opcao == '2':
         print('Opção 2 - Cadastrando produto')
 
-       
     elif opcao == '3':
-            print('Opção 3 - Listando produtos')
+        print('Opção 3 - Listando produtos')
 
-    if p1_home == " " and p2_nome == " " and p3_nome == " "
-        print('Nenhum produto cadastrado no sistema ainda.')
-
+        if p1_home == " " and p2_nome == " " and p3_nome == " ":
+            print('Nenhum produto cadastrado no sistema ainda.')
 
     elif opcao == '4':
-          print('Opção 4 -Realizando venda')
+        print('Opção 4 -Realizando venda')
 
     elif opcao == '5':
-            print('Opção 5 - Cancelando produtos')
+        print('Opção 5 - Cancelando produtos')
 
     elif opcao == '6':
-          print('Opção 6 - Consultando estoque')
+        print('Opção 6 - Consultando estoque')
 
     elif opcao == '8':
         print('Opção 8 - Histórico de vendas')
@@ -79,7 +79,7 @@ while True:
 
     elif opcao == '0':
         print('Opção 0 - Sair do sistema')
+        break
 
     else:
         print('Opção inválida')
-
